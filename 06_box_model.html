@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model / Margin and padding</title>
+  </head>
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .box {
+      background: #f4f4f4;
+      border: 2px solid gray;
+      width: 500px;
+      /* *************** PADDING ***************** */
+      /* **************** Padding on all sides */
+      padding: 20px;
+      /* **************** Padding per side */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+      /* **************** Padding shorthand: top, right,bottom,left */
+      padding: 5px 10px 5px 10px;
+      /* **************** Padding shorthand: top/bottom and left/right */
+      padding: 2px 5px;
+
+      /* *************** MARGIN ***************** */
+      /* **************** Margin on all sides */
+      margin: 20px;
+      /* **************** Margin per side */
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+      /* **************** Margin shorthand: top, right,bottom,left */
+      margin: 5px 10px 5px 10px;
+      /* **************** Margin shorthand: top/bottom and left/right */
+      margin: 2px 5px;
+    }
+
+    .box h3 {
+      padding-bottom: 10px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati alias
+        quidem nobis sit unde eveniet reiciendis deleniti consectetur at cumque
+        quod aspernatur, est architecto doloremque tempore libero, error quae!
+        Fugiat, nihil quibusdam sed id expedita laudantium repudiandae sunt
+        eius, voluptatum vitae ullam voluptatem laboriosam, labore adipisci
+        aliquid magnam veniam facere ratione! Quasi debitis necessitatibus ad
+        iusto in nemo voluptatum qui ipsam eos obcaecati. Laborum delectus vel
+        hic temporibus, sed modi officia sint. Itaque in corporis laboriosam
+        dolorem tempora nesciunt accusantium. Aliquid inventore placeat
+        voluptates, perferendis, expedita dolorum id rem architecto tempora
+        excepturi vero aut harum dolores quis, commodi consequatur ratione.
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati alias
+        quidem nobis sit unde eveniet reiciendis deleniti consectetur at cumque
+        quod aspernatur, est architecto doloremque tempore libero, error quae!
+        Fugiat, nihil quibusdam sed id expedita laudantium repudiandae sunt
+        eius, voluptatum vitae ullam voluptatem laboriosam, labore adipisci
+        aliquid magnam veniam facere ratione! Quasi debitis necessitatibus ad
+        iusto in nemo voluptatum qui ipsam eos obcaecati. Laborum delectus vel
+        hic temporibus, sed modi officia sint. Itaque in corporis laboriosam
+        dolorem tempora nesciunt accusantium. Aliquid inventore placeat
+        voluptates, perferendis, expedita dolorum id rem architecto tempora
+        excepturi vero aut harum dolores quis, commodi consequatur ratione.
+      </p>
+    </div>
+  </body>
+</html>
