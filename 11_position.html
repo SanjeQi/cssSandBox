@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning elements on the page</title>
+    <style>
+      body {
+        height: 4000px;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+      }
+      .container {
+        position: relative;
+        width: 500px;
+        height: 500px;
+        background: #333;
+      }
+      #box-1 {
+        position: relative;
+        top: 50px;
+        left: 50px;
+        background: rgb(199, 116, 116);
+        z-index: 1; /*bring element in front-- the higher the Number tje closer the element*/
+      }
+      #box-2 {
+        position: absolute;
+        background: rgb(230, 230, 6);
+        top: 100px;
+        left: 100px;
+      }
+      #box-3 {
+        position: absolute;
+        background: yellowgreen;
+        bottom: 100px;
+        right: 100px;
+      }
+      #box-4 {
+        position: fixed;
+        background: rgb(92, 92, 167);
+      }
+      #box-5 {
+        position: sticky;
+        top: 0;
+        background: rgb(245, 102, 7);
+        z-index: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box-1" class="box"></div>
+    <div class="container">
+      <div id="box-2" class="box"></div>
+      <div id="box-3" class="box"></div>
+    </div>
+    <div id="box-4" class="box"></div>
+    <div id="box-5" class="box"></div>
+  </body>
+</html>
