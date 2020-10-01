@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/aside.css" />
+    <title>Test File</title>
+    <style>
+      h1 {
+        /* display: none;         remove the element from page    */
+        /* visibility: hidden;     still on the page but hidden   */
+        color: blue !important;
+      }
+      .hello {
+        color: brown;
+        margin-top: -30px; /* valid */
+        margin-left: -30px; /* valid */
+        padding-top: -30px; /* invalid  !negative val only works with margin*/
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="hello">Hello World</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus quas
+      corrupti accusamus sed id molestiae architecto unde officia quibusdam
+      incidunt magni mollitia hic repudiandae cum reiciendis illo labore, earum
+      quae?
+    </p>
+  </body>
+</html>
