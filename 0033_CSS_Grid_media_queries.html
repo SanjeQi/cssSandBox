@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid Media Queries</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          grid-template-columns: repeat(2, auto);
+        }
+      }
+      @media (max-width: 600px) {
+        .container {
+          grid-template-columns: 1fr;
+        }
+      }
+      .item {
+        border: 1px #ccc solid;
+        padding: 0.5rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          aperiam, reprehenderit voluptate natus molestias delectus.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          aperiam, reprehenderit voluptate natus molestias delectus.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          aperiam, reprehenderit voluptate natus molestias delectus.
+        </p>
+      </div>
+      <div class="item">
+        <h3>Heading</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+          aperiam, reprehenderit voluptate natus molestias delectus.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
